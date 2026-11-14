@@ -1,0 +1,1 @@
+export type Dose={id:string;time:string;name:string;units:number;status:string;completed?:string};export type Reading={id:string;value:number;date:string};export type Data={doses:Dose[];readings:Reading[]};export type Category='Insulin History'|'Glucose Readings'|'Medical Information';
