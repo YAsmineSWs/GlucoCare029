@@ -46,7 +46,7 @@ index.html
 
 | Name | Purpose |
 | --- | --- |
-| `STORAGE_KEY` | Names this version of the saved browser data: `glucocare-v3`. |
+| `STORAGE_KEY` | Names this version of the saved browser data: `glucocare-v4`. |
 | `initialData()` | Returns a new set of four scheduled doses and three glucose readings. No injections start as Taken; the first is Due and the others are Upcoming. |
 | `validateGlucose(raw)` | Returns an explanatory error for empty, malformed, negative or zero values; otherwise returns an empty string. |
 | `validateDose(raw, scheduledUnits)` | Rejects empty, malformed, negative, zero or mismatched values. Matching the scheduled units is a prototype consistency rule, not a medical recommendation. |
