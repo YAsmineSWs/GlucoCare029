@@ -26,3 +26,7 @@ See TEST_REPORT.md for actual checks and limits. This is a UI demonstration, not
 Push this project to the `main` branch of a GitHub repository. In repository Settings → Pages, choose **GitHub Actions** as the build source. The included `.github/workflows/pages.yml` installs, tests, builds with the correct repository base path, and deploys the static app. The Actions deployment provides the public website URL. A repository source link alone does not open the app.
 
 Each visitor has independent browser-local data. Entries are not shared between visitors.
+
+## Explaining the code
+
+See [CODE_GUIDE.md](CODE_GUIDE.md) for a file-by-file guide, key functions and a suggested presentation walkthrough.
