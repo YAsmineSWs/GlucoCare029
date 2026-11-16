@@ -39,3 +39,15 @@ html:active-view-transition .screen-enter{animation:none}
 .success-icon{animation:success-pop .5s cubic-bezier(.2,.8,.2,1) both}
 @keyframes success-pop{0%{opacity:0;transform:scale(.78)}70%{transform:scale(1.05)}100%{opacity:1;transform:scale(1)}}
 @media(prefers-reduced-motion:reduce){::view-transition-group(app-content),::view-transition-old(app-content),::view-transition-new(app-content){animation:none!important}}
+
+.dose-review{transition:border-color .2s,box-shadow .2s}
+.dose-review.dose-invalid{border:2px solid #c83f42;padding:19px;box-shadow:0 0 0 3px #c83f420a}
+.dose-entry{display:flex;align-items:center;gap:12px;background:#f4faf7;border:1px solid #cadfd4;border-radius:12px;padding:12px 15px;margin-bottom:8px}
+.dose-entry input{width:100%;min-width:0;font-size:30px;font-weight:700;color:#007d70;background:transparent;border:0;outline:none}
+.dose-entry span{color:#617b6b;font-size:14px}
+.dose-entry:focus-within{box-shadow:0 0 0 2px #8fc3b6}
+.dose-entry.invalid{border:2px solid #c83f42;background:#fff7f7}
+.dose-entry.invalid:focus-within{box-shadow:0 0 0 2px #c83f4220}
+.dose-entry.invalid input{color:#b33136}
+.dose-error{display:flex;align-items:flex-start;gap:7px;font-size:12px!important;color:#b33136!important}
+.dose-error svg{flex-shrink:0;margin-top:2px}
