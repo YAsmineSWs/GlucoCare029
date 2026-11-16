@@ -23,7 +23,7 @@ index.html
 | `index.html` | The browser document, page title, viewport settings, root element and link to `src/main.tsx`. | “This is the HTML entry point. React renders the interface inside the root element.” |
 | `src/main.tsx` | Imports React, App and CSS; uses `createRoot` to mount App inside React StrictMode. | “This starts the application and loads its styling.” |
 | `src/App.tsx` | Shared state, screen navigation, browser storage, main screens, input handlers, reset dialog and trend drawing. | “This coordinates the application: it decides which screen is visible and keeps information consistent between screens.” |
-| `src/components/UI.tsx` | Reusable `Card`, `Button`, `Badge`, `Header`, `Success` and `Shell` components. Shell draws the phone, status bar, app branding and four navigation tabs. | “Shared components give every screen the same buttons, cards, status labels and phone layout.” |
+| `src/components/UI.tsx` | Reusable `Card`, `Button`, `Badge`, `Header`, `Success` and `Shell` components. Shell draws the phone, status bar, app branding and four navigation tabs. MontrealClock updates the time every second in the America/Toronto time zone, including daylight saving changes. | “Shared components give every screen the same buttons, cards, status labels and phone layout.” |
 | `src/pages/Reports.tsx` | `ReportsHome`, `Selection`, `Preview`, `Explainer`, `InsulinHistory`, the three category names and predefined laboratory values/explanations. | “This groups the reporting screens, category selection and printable summary.” |
 | `src/lib/model.js` | Initial doses/readings, storage key, glucose and dose validators, dose recording, stored-data checks and loading fallback. | “This contains the data rules independently of the visual interface.” |
 | `src/lib/types.ts` | TypeScript definitions for `Dose`, `Reading`, `Data` and `Category`. | “These describe the structure of the data and help catch incorrect usage during development.” |
@@ -46,7 +46,7 @@ index.html
 
 | Name | Purpose |
 | --- | --- |
-| `STORAGE_KEY` | Names this version of the saved browser data: `glucocare-v2`. |
+| `STORAGE_KEY` | Names this version of the saved browser data: `glucocare-v3`. |
 | `initialData()` | Returns a new set of four scheduled doses and three glucose readings. No injections start as Taken; the first is Due and the others are Upcoming. |
 | `validateGlucose(raw)` | Returns an explanatory error for empty, malformed, negative or zero values; otherwise returns an empty string. |
 | `validateDose(raw, scheduledUnits)` | Rejects empty, malformed, negative, zero or mismatched values. Matching the scheduled units is a prototype consistency rule, not a medical recommendation. |
